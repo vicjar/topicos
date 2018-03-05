@@ -19,10 +19,14 @@ namespace Practica1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            button1.Visible = true;
+            button2.Visible = true;
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Red);
             System.Drawing.Graphics formGraphics;
             formGraphics = this.CreateGraphics();
-
+            textBox1.Text = "0.0";
+            textBox2.Text = "0.0";
+            textBox3.Text = "0.0";
             string opcion = opc.SelectedItem.ToString();
             
             if (opcion == "Circulo")

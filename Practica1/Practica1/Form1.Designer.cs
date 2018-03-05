@@ -77,6 +77,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.Tag = "";
             // 
             // textBox3
             // 
@@ -113,6 +114,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Area";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
@@ -123,6 +125,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Permetro";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lResultado

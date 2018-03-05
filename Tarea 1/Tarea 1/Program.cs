@@ -62,11 +62,11 @@ namespace Tarea_1
             //DELEGATES
             Operaciones operaciones = new Operaciones(Program.Doubler);
             Console.WriteLine("Operaciones con delegado ");
-            Console.WriteLine(operaciones(2));
-            operaciones = new Operaciones(Program.IsPair);
-            Console.WriteLine(operaciones(2));
-            operaciones = new Operaciones(Program.Factorial);
-            Console.WriteLine(operaciones(2));
+            Console.WriteLine(operaciones.Invoke(5));
+            operaciones += Program.IsPair;
+            Console.WriteLine(operaciones.Invoke(5));
+            operaciones += Program.Factorial;
+            Console.WriteLine(operaciones.Invoke(5));
            
             //Interfaz
             Console.WriteLine("Operaciones con interface");
